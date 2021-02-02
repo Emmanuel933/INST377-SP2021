@@ -60,7 +60,7 @@ p, li {
 }
 
 body > * {
-  background-color: red;
+  background-color: rgb(30, 255, 0);
   padding: 1%;
 }
 
