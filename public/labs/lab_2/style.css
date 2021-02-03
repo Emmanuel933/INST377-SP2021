@@ -20,7 +20,7 @@ body {
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Londrina Solid', cursive;
+  font-family: 'Comfortaa', cursive;
   color: #2a2a2a;
 }
 
@@ -120,11 +120,8 @@ nav a, nav span {
   flex: 4;
 }
 
-.article h2{
-  font-weight: 50;
-}
 .aside h2{
-  font-weight: 100;
+  font-weight: 50;
 }
 .aside {
   display: flex;
