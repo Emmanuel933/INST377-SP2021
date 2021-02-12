@@ -1,4 +1,3 @@
-
 /* label the images, just for convenience, to visually track them */
 let i = 1;
 for(let li of carousel.querySelectorAll('li')) {
@@ -9,7 +8,7 @@ for(let li of carousel.querySelectorAll('li')) {
 
 /* configuration */
 let width = 130; // image width
-let count = 7; // visible images count
+let count = 3; // visible images count
 
 let list = carousel.querySelector('ul');
 let listElems = carousel.querySelectorAll('li');
@@ -31,3 +30,10 @@ carousel.querySelector('.next').onclick = function() {
   position = Math.max(position, -width * (listElems.length - count));
   list.style.marginLeft = position + 'px';
 }
+
+
+
+
+
+
+

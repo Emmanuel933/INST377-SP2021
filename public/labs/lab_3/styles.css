@@ -1,16 +1,21 @@
 body {
-    padding: 10px;
+  background-color: cyan;
+  padding: 10px;
   }
   
   .carousel {
-    position: relative;
+    position: fixed;
     width: 398px;
     padding: 10px 40px;
-    border: 1px solid #CCC;
+    border: 1px solid rgb(211, 175, 175);
     border-radius: 15px;
-    background: rgb(66, 23, 23);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(214, 110, 110);
   }
-  
+
+
   .carousel img {
     width: 130px;
     height: 130px;
