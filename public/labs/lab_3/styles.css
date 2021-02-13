@@ -1,5 +1,5 @@
 body {
-  background-color: cyan;
+  background-color: rgb(47, 59, 59);
   padding: 10px;
   }
   
@@ -14,8 +14,8 @@ body {
     transform: translate(-50%,-50%);
     background: rgb(214, 110, 110);
   }
-
-
+ 
+  
   .carousel img {
     width: 130px;
     height: 130px;
