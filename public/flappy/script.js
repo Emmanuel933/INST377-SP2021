@@ -1,3 +1,5 @@
+const { functions } = require("cypress/types/lodash")
+
 document.addEventListener('DOMContentLoaded', ()  => {
     const bird = document.querySelector('.bird')
     const gameDisplay = document.querySelector('.game-container')
@@ -7,13 +9,12 @@ document.addEventListener('DOMContentLoaded', ()  => {
     let birdBottom = 100
     let gravity = 2
 
-
     function startGame() {
         birdBottom -= gravity
         bird.style.bottom = birdBottom + 'px'
         bird.style.left = birdLeft + 'px'
     }
-    let timerId = setInterval(startGame, 20)
+    let gasmeTimerId = setInterval(startGame, 20)
 
     function control(e) {
         if (e.keyCode === 32) {
@@ -46,13 +47,19 @@ document.addEventListener('DOMContentLoaded', ()  => {
             if (obstacleLeft === -60) {
                 clearInterval(timerId)
                     gameDisplay.removeChild(obstacle)
-            }            
+            }   
+            if  (birdBottom === 0) {
+                gameOver()
+            }         
         }
         let timerId = setInterval(moveObstacle, 20)
         setTimeout(generateObstacle, 3000)
 
     }
     generateObstacle()
+
+
+    function gameOver() 
 
 
 })
