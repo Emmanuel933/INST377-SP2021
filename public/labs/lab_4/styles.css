@@ -87,7 +87,7 @@ body {
   }
   
   .flex-outer li button {
-    margin-left: auto;
+    margin-left: -100px;
     padding: 8px 16px;
     border: none;
     background: #333;
