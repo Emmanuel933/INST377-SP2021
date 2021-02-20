@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded' , () => {
 
     let birdLeft = 220
     let birdBottom = 100
-    let gravity = 3
+    let gravity = 2
     let isGameOver = false
     let gap = 430
 
@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded' , () => {
 
     function gameOver() {
         clearInterval(gameTimerId)
-        console.log('game over')
+        // console.log('game over')
         isGameOver = true
         document.removeEventListener('keyup', control)
-        ground.classList.add('ground')
-        ground.classList.remove('ground-moving')
+        // ground.classList.add('ground')
+        // ground.classList.remove('ground-moving')
     }
 
 
